@@ -10,4 +10,6 @@ BLUE = (0, 0, 255)
 WINDOW_WIDTH = 800
 WINDOW_HEIGHT = 600
 
+TITLE = "Drawing text in Pygame"
+
 FPS = 60

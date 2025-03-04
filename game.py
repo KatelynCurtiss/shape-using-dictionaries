@@ -20,7 +20,7 @@ def handle_events ():
         elif event.type == pygame.KEYDOWN:
             if event.key == pygame.K_ESCAPE:
                 return False
-        return True
+    return True
 
 def main():
     screen = init_game()
@@ -28,11 +28,12 @@ def main():
     running = True
     while running:
         running = handle_events()
-    screen.fill(config.WHITE) # Use color from config
-    pygame.display.flip()
+        screen.fill(config.WHITE) 
+        pygame.display.flip()
 
-    clock.tick(config.FPS) 
-pygame.quit()
+        clock.tick(config.FPS) 
+    
+    pygame.quit()
 
 sys.exit()
 if __name__ == "__main__":
